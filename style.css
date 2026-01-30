@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px #baa1a1
+}
+
+.navbar .container .navbar-icons {
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.namepage {
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-transform: capitalize;
+
+}
+
+.container {
+    display: flex;
+}
+
+.navbar span {
+    cursor: pointer;
+}
+
+.namepage .name-page {
+    cursor: pointer;
+}
+
+.nav-search {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    gap: 650px;
+    padding: 5px;
+}
+
+.nav-search .glass {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lazurde {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.content-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.content-navbar span {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.links .list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar .links .list li a {
+    position: relative;
+}
+
+.navbar .links .list li a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+
+}
+
+.navbar .links .list li a:hover::after {
+    width: 100%;
+
+}
